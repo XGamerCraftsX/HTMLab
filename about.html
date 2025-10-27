@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <title>HTMLab</title>
+  <link rel="icon" type="image/png" 
+        href="https://raw.githubusercontent.com/XGamerCraftsX/HTMLab/main/nocopyright.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @keyframes fadeZoom {
+      0% { opacity: 0; transform: scale(0.97); filter: blur(8px); }
+      100% { opacity: 1; transform: scale(1); filter: blur(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(25px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(50, 205, 99);
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             margin: 0;
+             text-align: center;
+             animation: fadeZoom 0.6s ease-out forwards;">
+
+  <header style="background-color: darkslategrey; padding: 20px 0;">
+    <img src="https://raw.githubusercontent.com/XGamerCraftsX/HTMLab/main/New%20Project.png"
+         alt="Logo"
+         height="50"
+         width="300"
+         style="border-radius: 30px;
+                object-fit: cover;
+                cursor: pointer;
+                transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s ease;"
+         onmouseover="this.style.transform='scale(1.12)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.35)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+         onclick="window.location.href='index.html';">
+  </header>
+
+  <main style="padding: 40px 20px;">
+    <h1 style="font-size: 300%; text-align: center;
+               opacity: 0;
+               animation: slideUp 0.6s ease-out 0.2s forwards;">
+      За нас
+    </h1>
+
+    <h2 style="font-size: 200%;
+               opacity: 0;
+               animation: slideUp 0.6s ease-out 0.4s forwards;">
+      Ние сме отбора от HTMLab. Той се състои от 2-ма души - Владимир Кръстев и Борис Кюпов. Обичаме да се занимаваме с програмиране.
+      Учим в ПМГ "Константин Величков" град Пазарджик
+    </h2>
+
+    <a href="index.html"
+       style="display: inline-block;
+              text-decoration: none;
+              background: #00ff51bc;
+              color: white;
+              padding: 12px 25px;
+              border-radius: 30px;
+              font-weight: 600;
+              box-shadow: 0 4px 10px rgba(0, 194, 248, 0.3);
+              margin-top: 20px;
+              transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);"
+       onmouseover="this.style.background='#00e1ff';
+                    this.style.transform='translateY(-5px) scale(1.05)';
+                    this.style.boxShadow='0 8px 18px rgba(22, 161, 242, 0.4)';"
+       onmouseout="this.style.background='#00ff51bc';
+                   this.style.transform='none';
+                   this.style.boxShadow='0 4px 10px rgba(0, 194, 248, 0.3)';">
+       Назад
+    </a>
+  </main>
+
+</body>
+</html>
